@@ -6,6 +6,7 @@ part of dart.core;
 
 /// An indexable collection of objects with a length.
 /// PR change
+/// another change
 ///
 /// Subclasses of this class implement different kinds of lists.
 /// The most common kinds of lists are:
@@ -702,3 +703,4 @@ abstract class List<E> implements EfficientLengthIterable<E> {
   /// does not compare the elements of the two lists.
   bool operator ==(Object other);
 }
+
