@@ -6,14 +6,13 @@ part of dart.core;
 
 /// An indexable collection of objects with a length.
 /// PR change
-/// another change
 ///
 /// Subclasses of this class implement different kinds of lists.
 /// The most common kinds of lists are:
 ///
 /// * Fixed-length list.
-/// An error occurs when attempting to use operations
-/// that can change the length of the list.
+///   An error occurs when attempting to use operations
+///   that can change the length of the list.
 ///
 /// * Growable list. Full implementation of the API defined in this class.
 ///
@@ -139,7 +138,7 @@ abstract class List<E> implements EfficientLengthIterable<E> {
   /// ```dart
   /// List<dynamic> dynList = ...some JSON value...;
   /// List<Map<String, dynamic>> fooList =
-  /// List.from(dynList.where((x) => x is Map && x["kind"] == "foo"));
+  ///     List.from(dynList.where((x) => x is Map && x["kind"] == "foo"));
   /// ```
   ///
   /// This constructor creates a growable list when [growable] is true;
@@ -703,4 +702,3 @@ abstract class List<E> implements EfficientLengthIterable<E> {
   /// does not compare the elements of the two lists.
   bool operator ==(Object other);
 }
-
